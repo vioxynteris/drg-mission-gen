@@ -44,30 +44,30 @@ Seed: 3422115630
 Codename: Unknown Comeback
 Biome: Azure Weald
 
-+-------+--------------+----------------------+----------------+-------------------+
-| Stage | Primary      | Secondary            | Warning        | Mutator           |
-+-------+--------------+----------------------+----------------+-------------------+
-| 1     | 250 Morkite  | Kill 1 Dreadnought   | Parasites      |                   |
-+-------+--------------+----------------------+----------------+-------------------+
-| 2     | 6 Eggs       | Repair 2 Mini-mules  | Mactera Plague |                   |
-+-------+--------------+----------------------+----------------+-------------------+
-| 3     | 3 Mini-mules | Perform 2 Deep Scans |                | Critical Weakness |
-+-------+--------------+----------------------+----------------+-------------------+
++-------+---------------------------+----------------------+----------------+-------------------+
+| Stage | Primary                   | Secondary            | Warning        | Mutator           |
++-------+---------------------------+----------------------+----------------+-------------------+
+| 1     | 250 Morkite               | 1 Dreadnought        | Parasites      |                   |
++-------+---------------------------+----------------------+----------------+-------------------+
+| 2     | 6 Eggs                    | 2 Mini-M.U.L.E.s     | Mactera Plague |                   |
++-------+---------------------------+----------------------+----------------+-------------------+
+| 3     | 3 Mini-M.U.L.E.s + Uplink | 2 Resonance Crystals |                | Critical Weakness |
++-------+---------------------------+----------------------+----------------+-------------------+
 
 
 === Elite Deep Dive ===
 Codename: Clean Bed
 Biome: Sandblasted Corridors
 
-+-------+------------------+-----------------------+----------------+-----------------+
-| Stage | Primary          | Secondary             | Warning        | Mutator         |
-+-------+------------------+-----------------------+----------------+-----------------+
-| 1     | On-Site Refinery | Perform 2 Deep Scans  | Duck and Cover |                 |
-+-------+------------------+-----------------------+----------------+-----------------+
-| 2     | Escort Duty      | Refine Liquid Morkite | Swarmageddon   |                 |
-+-------+------------------+-----------------------+----------------+-----------------+
-| 3     | On-Site Refinery | Collect 150 Morkite   | Lethal Enemies | Rich Atmosphere |
-+-------+------------------+-----------------------+----------------+-----------------+
++-------+------------------+----------------------+----------------+-----------------+
+| Stage | Primary          | Secondary            | Warning        | Mutator         |
++-------+------------------+----------------------+----------------+-----------------+
+| 1     | On-Site Refining | 2 Resonance Crystals | Duck and Cover |                 |
++-------+------------------+----------------------+----------------+-----------------+
+| 2     | Escort Duty      | Liquid Morkite Well  | Swarmageddon   |                 |
++-------+------------------+----------------------+----------------+-----------------+
+| 3     | On-Site Refining | 150 Morkite          | Lethal Enemies | Rich Atmosphere |
++-------+------------------+----------------------+----------------+-----------------+
 ```
 
 ### Example: `--format=discord`
@@ -83,19 +83,19 @@ Example `--format=discord` output:
 
 ```
 Weekly Deep Dives information for **2024-07-11 to 2024-07-18**.
-Deep Dives will reset **<t:1721300400:F>** (<t:1721300400:R>)
+Deep Dives will reset **<t:1721300400:f>** 
 
 :Deep_Dive: __**DEEP DIVE**__ :Deep_Dive:
 Region: **Azure Weald** | Code Name: **Unknown Comeback**
 Stage 1: **:morkite: 250 Morkite** + **:dreadegg: Dreadnought** | :tothebone: **Parasites**
-Stage 2: **:gegg: 6 Eggs** + **:molly: Repair 2 Mini-mules** | :tothebone: **Mactera Plague**
-Stage 3: **:molly: 3 Mini-mules** + **:pingdrg: Perform 2 Deep Scans** | :rocknstone: **Critical Weakness**
+Stage 2: **:gegg: 6 Eggs** + **:molly: 2 Mini-M.U.L.E.s** | :tothebone: **Mactera Plague**
+Stage 3: **:molly: 3 Mini-M.U.L.E.s + Uplink** + **:pingdrg: 2 Resonance Crystals** | :rocknstone: **Critical Weakness**
 
 :Deep_Dive: __**ELITE DEEP DIVE**__ :Deep_Dive:
 Region: **Sandblasted Corridors** | Code Name: **Clean Bed**
-Stage 1: **:refinerywell: On-Site Refinery** + **:pingdrg: Perform 2 Deep Scans** | :tothebone: **Duck and Cover**
-Stage 2: **:drill: Escort Duty** + **:refinerywell: Connect 1 Pumpjack** | :tothebone: **Swarmageddon**
-Stage 3: **:refinerywell: On-Site Refinery** + **:morkite: 150 Morkite** | :rocknstone: **Rich Atmosphere** :tothebone: **Lethal Enemies**
+Stage 1: **:refinerywell: On-Site Refining** + **:pingdrg: 2 Resonance Crystals** | :tothebone: **Duck and Cover**
+Stage 2: **:drill: Escort Duty** + **:refinerywell: Liquid Morkite Well** | :tothebone: **Swarmageddon**
+Stage 3: **:refinerywell: On-Site Refining** + **:morkite: 150 Morkite** | :rocknstone: **Rich Atmosphere** :tothebone: **Lethal Enemies**
 ```
 
 ## Known limitations

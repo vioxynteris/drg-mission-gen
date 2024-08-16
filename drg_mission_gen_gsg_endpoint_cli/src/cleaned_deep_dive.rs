@@ -75,7 +75,7 @@ impl PrimaryObjective {
             PrimaryObjective::IndustrialSabotage => "Industrial Sabotage",
             PrimaryObjective::EggHunt => "Egg Hunt",
             PrimaryObjective::PointExtraction => "Point Extraction",
-            PrimaryObjective::Refinery => "On-Site Refinery",
+            PrimaryObjective::Refinery => "On-Site Refining",
             PrimaryObjective::Salvage => "Salvage Operation",
             PrimaryObjective::Elimination => "Elimination",
         }
@@ -89,8 +89,8 @@ impl PrimaryObjective {
     ) -> &'static str {
         match self {
             PrimaryObjective::DeepScan => match (duration, complexity) {
-                (Duration::Short, Complexity::Average) => "Perform 3 Deep Scans",
-                (Duration::Normal, Complexity::Average) => "Perform 5 Deep Scans",
+                (Duration::Short, Complexity::Average) => "3 Resonance Crystals + Drillevator",
+                (Duration::Normal, Complexity::Average) => "5 Resonance Crystals + Drillevator",
                 (dur, comp) => unreachable!(
                     "unexpected deep scan duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                 ),
@@ -142,7 +142,7 @@ impl PrimaryObjective {
             },
             PrimaryObjective::Refinery => {
                 match (duration, complexity) {
-                    (Duration::Normal, Complexity::Average | Complexity::Complex) => "On-Site Refinery",
+                    (Duration::Normal, Complexity::Average | Complexity::Complex) => "On-Site Refining",
                     (dur, comp) => unreachable!(
                         "unexpected refinery duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                     ),
@@ -150,8 +150,8 @@ impl PrimaryObjective {
             },
             PrimaryObjective::Salvage => {
                 match (duration, complexity) {
-                    (Duration::Normal, Complexity::Average) => "2 Mini-mules",
-                    (Duration::Long, Complexity::Complex) => "3 Mini-mules",
+                    (Duration::Normal, Complexity::Average) => "2 Mini-M.U.L.E.s + Uplink",
+                    (Duration::Long, Complexity::Complex) => "3 Mini-M.U.L.E.s + Uplink",
                     (dur, comp) => unreachable!(
                         "unexpected point extraction duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                     ),
@@ -159,8 +159,8 @@ impl PrimaryObjective {
             },
             PrimaryObjective::Elimination => {
                 match (duration, complexity) {
-                    (Duration::Normal, Complexity::Average) => "Kill 2 dreadnoughts",
-                    (Duration::Long, Complexity::Complex) => "Kill 3 dreadnoughts",
+                    (Duration::Normal, Complexity::Average) => "2 Dreadnoughts ()",
+                    (Duration::Long, Complexity::Complex) => "3 Dreadnoughts ()",
                     (dur, comp) => unreachable!(
                         "unexpected elimination duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                     ),
@@ -184,13 +184,13 @@ pub(crate) enum DeepDiveSecondaryObjective {
 impl DeepDiveSecondaryObjective {
     pub(crate) fn display(self) -> &'static str {
         match self {
-            DeepDiveSecondaryObjective::Eggs => "Collect 2 Eggs",
-            DeepDiveSecondaryObjective::DeepScan => "Perform 2 Deep Scans",
-            DeepDiveSecondaryObjective::Blackbox => "Defend Black Box",
-            DeepDiveSecondaryObjective::Dreadnought => "Kill 1 Dreadnought",
-            DeepDiveSecondaryObjective::Morkite => "Collect 150 Morkite",
-            DeepDiveSecondaryObjective::Pumpjack => "Refine Liquid Morkite",
-            DeepDiveSecondaryObjective::Minimules => "Repair 2 Mini-mules",
+            DeepDiveSecondaryObjective::Eggs => "2 Eggs",
+            DeepDiveSecondaryObjective::DeepScan => "2 Resonance Crystals",
+            DeepDiveSecondaryObjective::Blackbox => "Black Box",
+            DeepDiveSecondaryObjective::Dreadnought => "Dreadnought",
+            DeepDiveSecondaryObjective::Morkite => "150 Morkite",
+            DeepDiveSecondaryObjective::Pumpjack => "Liquid Morkite Well",
+            DeepDiveSecondaryObjective::Minimules => "2 Mini-M.U.L.E.s",
         }
     }
 }

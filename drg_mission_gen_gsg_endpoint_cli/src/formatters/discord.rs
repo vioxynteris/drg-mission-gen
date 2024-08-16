@@ -23,8 +23,8 @@ pub(crate) fn format_discord(
 
     format!(
         "\
-        Weekly Deep Dives information for **{start_date} to {end_date}**.\n\
-        Deep Dives will reset **<t:{end_timestamp}:F>** (<t:{end_timestamp}:R>)\n\
+        Weekly Deep Dives information for **{start_date} to {end_date}**\n\
+        Deep Dives will reset **<t:{end_timestamp}:f>**\n\
         Seed: {seed} \n\n\
         :Deep_Dive: __**DEEP DIVE**__ :Deep_Dive:\n\
         {dd_info}\n\n\
@@ -113,7 +113,7 @@ fn format_primary_objective(
             format!(":aquarq: {}", obj.display_detailed(complexity, duration))
         }
         PrimaryObjective::Refinery => {
-            format!(":refinerywell: On-Site Refinery")
+            format!(":refinerywell: On-Site Refining")
         }
         PrimaryObjective::Salvage => {
             format!(":molly: {}", obj.display_detailed(complexity, duration))
