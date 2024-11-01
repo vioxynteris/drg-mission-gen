@@ -25,7 +25,6 @@ pub(crate) fn format_discord(
         "\
         Weekly Deep Dives information for **{start_date} to {end_date}**\n\
         Deep Dives will reset **<t:{end_timestamp}:f>**\n\
-        Seed: {seed} \n\n\
         :Deep_Dive: __**DEEP DIVE**__ :Deep_Dive:\n\
         {dd_info}\n\n\
         :Deep_Dive: __**ELITE DEEP DIVE**__ :Deep_Dive:\n\
@@ -127,12 +126,12 @@ fn format_primary_objective(
 fn format_secondary_objective(obj: &DeepDiveSecondaryObjective) -> &'static str {
     match obj {
         DeepDiveSecondaryObjective::Eggs => ":gegg: 2 Eggs",
-        DeepDiveSecondaryObjective::DeepScan => ":pingdrg: Perform 2 Deep Scans",
+        DeepDiveSecondaryObjective::DeepScan => ":pingdrg: 2 Resonance Crystals",
         DeepDiveSecondaryObjective::Blackbox => ":uplink: Black Box",
         DeepDiveSecondaryObjective::Dreadnought => ":dreadegg: Dreadnought",
         DeepDiveSecondaryObjective::Morkite => ":morkite: 150 Morkite",
-        DeepDiveSecondaryObjective::Pumpjack => ":refinerywell: Connect 1 Pumpjack",
-        DeepDiveSecondaryObjective::Minimules => ":molly: Repair 2 Mini-mules",
+        DeepDiveSecondaryObjective::Pumpjack => ":refinerywell: Liquid Morkite Well",
+        DeepDiveSecondaryObjective::Minimules => ":molly: 2 Mini-M.U.L.E.s",
     }
 }
 

@@ -150,8 +150,8 @@ impl PrimaryObjective {
             },
             PrimaryObjective::Salvage => {
                 match (duration, complexity) {
-                    (Duration::Normal, Complexity::Average) => "2 Mini-M.U.L.E.s + Uplink",
-                    (Duration::Long, Complexity::Complex) => "3 Mini-M.U.L.E.s + Uplink",
+                    (Duration::Normal, Complexity::Average) => "2 Mini-M.U.L.E.s & Uplink",
+                    (Duration::Long, Complexity::Complex) => "3 Mini-M.U.L.E.s & Uplink",
                     (dur, comp) => unreachable!(
                         "unexpected point extraction duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                     ),
