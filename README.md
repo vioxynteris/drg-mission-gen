@@ -66,7 +66,7 @@ Stage 1: **:refinerywell: On-Site Refining** + **:pingdrg: 2 Resonance Crystals*
 Stage 2: **:drill: Escort Duty** + **:refinerywell: Liquid Morkite Well** | :tothebone: **Swarmageddon**
 Stage 3: **:refinerywell: On-Site Refining** + **:morkite: 150 Morkite** | :rocknstone: **Rich Atmosphere** :tothebone: **Lethal Enemies**
 ```
-![image](https://github.com/user-attachments/assets/d05b4388-0f17-4150-8c0b-5ff4c71e504a)
+![image](https://github.com/user-attachments/assets/9b5f4487-4fd5-47cd-92b2-7e2916b63044)
 
 
 ## Known Issues
