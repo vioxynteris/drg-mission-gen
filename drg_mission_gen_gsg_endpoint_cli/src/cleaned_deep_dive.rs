@@ -89,8 +89,8 @@ impl PrimaryObjective {
     ) -> &'static str {
         match self {
             PrimaryObjective::DeepScan => match (duration, complexity) {
-                (Duration::Short, Complexity::Average) => "3 Resonance Crystals + Drillevator",
-                (Duration::Normal, Complexity::Average) => "5 Resonance Crystals + Drillevator",
+                (Duration::Short, Complexity::Average) => "3 Resonance Crystals & Drillevator",
+                (Duration::Normal, Complexity::Average) => "5 Resonance Crystals & Drillevator",
                 (dur, comp) => unreachable!(
                     "unexpected deep scan duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                 ),
@@ -159,8 +159,8 @@ impl PrimaryObjective {
             },
             PrimaryObjective::Elimination => {
                 match (duration, complexity) {
-                    (Duration::Normal, Complexity::Average) => "2 Dreadnoughts ()",
-                    (Duration::Long, Complexity::Complex) => "3 Dreadnoughts ()",
+                    (Duration::Normal, Complexity::Average) => "2 Dreadnoughts (TBA)",
+                    (Duration::Long, Complexity::Complex) => "3 Dreadnoughts (TBA)",
                     (dur, comp) => unreachable!(
                         "unexpected elimination duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                     ),
@@ -187,7 +187,7 @@ impl DeepDiveSecondaryObjective {
             DeepDiveSecondaryObjective::Eggs => "2 Eggs",
             DeepDiveSecondaryObjective::DeepScan => "2 Resonance Crystals",
             DeepDiveSecondaryObjective::Blackbox => "Black Box",
-            DeepDiveSecondaryObjective::Dreadnought => "Dreadnought",
+            DeepDiveSecondaryObjective::Dreadnought => "Dreadnought (TBA)",
             DeepDiveSecondaryObjective::Morkite => "150 Morkite",
             DeepDiveSecondaryObjective::Pumpjack => "Liquid Morkite Well",
             DeepDiveSecondaryObjective::Minimules => "2 Mini-M.U.L.E.s",
