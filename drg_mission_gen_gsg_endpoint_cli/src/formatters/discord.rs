@@ -128,7 +128,7 @@ fn format_secondary_objective(obj: &DeepDiveSecondaryObjective) -> &'static str 
         DeepDiveSecondaryObjective::Eggs => ":gegg: 2 Eggs",
         DeepDiveSecondaryObjective::DeepScan => ":pingdrg: 2 Resonance Crystals",
         DeepDiveSecondaryObjective::Blackbox => ":uplink: Black Box",
-        DeepDiveSecondaryObjective::Dreadnought => ":dreadegg: Dreadnought",
+        DeepDiveSecondaryObjective::Dreadnought => ":dreadegg: Dreadnought (TBA)",
         DeepDiveSecondaryObjective::Morkite => ":morkite: 150 Morkite",
         DeepDiveSecondaryObjective::Pumpjack => ":refinerywell: Liquid Morkite Well",
         DeepDiveSecondaryObjective::Minimules => ":molly: 2 Mini-M.U.L.E.s",
