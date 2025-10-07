@@ -19,15 +19,15 @@ Seed: 3422115630
 Codename: Unknown Comeback
 Biome: Azure Weald
 
-+-------+------------------+-------------------------+----------------+-------------------+
-| Stage | Primary          | Secondary               | Warning        | Mutator           |
-+-------+------------------+-------------------------+----------------+-------------------+
-| 1     | 250 Morkite      | Kill 1 Dreadnought      | Parasites      |                   |
-+-------+------------------+-------------------------+----------------+-------------------+
-| 2     | 6 Eggs           | Repair 2 Mini-M.U.L.E.s | Mactera Plague |                   |
-+-------+------------------+-------------------------+----------------+-------------------+
-| 3     | 3 Mini-M.U.L.E.s | 2 Resonance Crystals    |                | Critical Weakness |
-+-------+------------------+-------------------------+----------------+-------------------+
++-------+---------------------------+----------------------+----------------+-------------------+
+| Stage | Primary                   | Secondary            | Warning        | Mutator           |
++-------+---------------------------+----------------------+----------------+-------------------+
+| 1     | 250 Morkite               | Kill 1 Dreadnought   | Parasites      |                   |
++-------+---------------------------+----------------------+----------------+-------------------+
+| 2     | 6 Eggs                    | 2 Mini-M.U.L.E.s     | Mactera Plague |                   |
++-------+---------------------------+----------------------+----------------+-------------------+
+| 3     | 3 Mini-M.U.L.E.s & Uplink | 2 Resonance Crystals |                | Critical Weakness |
++-------+---------------------------+----------------------+----------------+-------------------+
 
 
 === Elite Deep Dive ===
@@ -57,8 +57,8 @@ Deep Dives will reset <t:1721300400:F>
 :Deep_Dive: __**DEEP DIVE**__ :Deep_Dive:
 Region: **Azure Weald** | Code Name: **Unknown Comeback**
 Stage 1: **:morkite: 250 Morkite** + **:dreadegg: Dreadnought** | :tothebone: **Parasites**
-Stage 2: **:gegg: 6 Eggs** + **:molly: Repair 2 Mini-M.U.L.E.s** | :tothebone: **Mactera Plague**
-Stage 3: **:molly: 3 Mini-M.U.L.E.s** + **:pingdrg: 2 Resonance Crystals** | :rocknstone: **Critical Weakness**
+Stage 2: **:gegg: 6 Eggs** + **:molly: 2 Mini-M.U.L.E.s** | :tothebone: **Mactera Plague**
+Stage 3: **:molly: 3 Mini-M.U.L.E.s & Uplink** + **:pingdrg: 2 Resonance Crystals** | :rocknstone: **Critical Weakness**
 
 :Deep_Dive: __**ELITE DEEP DIVE**__ :Deep_Dive:
 Region: **Sandblasted Corridors** | Code Name: **Clean Bed**
@@ -66,7 +66,8 @@ Stage 1: **:refinerywell: On-Site Refining** + **:pingdrg: 2 Resonance Crystals*
 Stage 2: **:drill: Escort Duty** + **:refinerywell: Liquid Morkite Well** | :tothebone: **Swarmageddon**
 Stage 3: **:refinerywell: On-Site Refining** + **:morkite: 150 Morkite** | :rocknstone: **Rich Atmosphere** :tothebone: **Lethal Enemies**
 ```
-![image](https://github.com/user-attachments/assets/5b05748c-05a9-4293-8e40-350a1de34594)
+![image](https://github.com/user-attachments/assets/9b5f4487-4fd5-47cd-92b2-7e2916b63044)
+
 
 ## Known Issues
   - The variety of Dreadnought required on Elimination objectives is not fetched.
