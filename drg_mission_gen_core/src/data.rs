@@ -4,6 +4,8 @@
 use serde::{Deserialize, Serialize};
 use strum::{IntoStaticStr, VariantArray};
 
+    // Annotations for terms used in search_seeds will be listed under their respective "pub enum" sections only
+
 #[derive(
     Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, VariantArray, Serialize, Deserialize,
 )]
@@ -113,16 +115,16 @@ impl EPlanetZone {
     Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, VariantArray, Serialize, Deserialize,
 )]
 pub enum EBiome {
-    BIOME_CrystalCaves,
-    BIOME_FungusBogs,
-    BIOME_MagmaCaves,
-    BIOME_RadioactiveZone,
-    BIOME_LushDownpour,
-    BIOME_SandblastedCorridors,
-    BIOME_SaltCaves,
-    BIOME_IceCaves,
-    BIOME_AzureWeald,
-    BIOME_HollowBough,
+    BIOME_CrystalCaves,                                        // Crystalline Caverns
+    BIOME_FungusBogs,                                          // Fungus Bogs
+    BIOME_MagmaCaves,                                          // Magma Core
+    BIOME_RadioactiveZone,                                     // Radioactive Exclusion Zone
+    BIOME_LushDownpour,                                        // Dense Biozone
+    BIOME_SandblastedCorridors,                                // Sandblasted Corridors
+    BIOME_SaltCaves,                                           // Salt Pits
+    BIOME_IceCaves,                                            // Glacial Strata
+    BIOME_AzureWeald,                                          // Azure Weald
+    BIOME_HollowBough,                                         // Hollow Bough
 }
 
 impl EBiome {
@@ -198,15 +200,15 @@ pub struct UMissionTemplate {
     Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, VariantArray, Serialize, Deserialize,
 )]
 pub enum EMissionTemplate {
-    MissionType_Extraction,
-    MissionType_Motherlode,
-    MissionType_EggCollection,
-    MissionType_Elimination,
-    MissionType_Salvage,
-    MissionType_Escort,
-    MissionType_Refinery,
-    MissionType_Facility,
-    MissionType_DeepScan,
+    MissionType_Extraction,                                    // Mining Expedition
+    MissionType_Motherlode,                                    // Point Extraction
+    MissionType_EggCollection,                                 // Egg Hunt
+    MissionType_Elimination,                                   // Elimination
+    MissionType_Salvage,                                       // Salvage Operation
+    MissionType_Escort,                                        // Escort Duty
+    MissionType_Refinery,                                      // On-Site Refining
+    MissionType_Facility,                                      // Industrial Sabotage
+    MissionType_DeepScan,                                      // Deep Scan
 }
 
 impl EMissionTemplate {
@@ -496,12 +498,12 @@ pub enum EMissionDuration {
 #[derive(
     Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, VariantArray, Serialize, Deserialize,
 )]
-pub enum EMissionDNA {
-    DNA_2_01,
-    DNA_2_02,
-    DNA_2_03,
-    DNA_2_04,
-    DNA_2_05,
+pub enum EMissionDNA {                         // most of these seem readable enough so i won't annotate them all
+    DNA_2_01,                                  // 200 Morkite
+    DNA_2_02,                                  // 250 Morkite
+    DNA_2_03,                                  // 225 Morkite
+    DNA_2_04,                                  // 325 Morkite
+    DNA_2_05,                                  // 400 Morkite
     DNA_Escort_LongAverage,
     DNA_Escort_LongComplex,
     DNA_Escort_MediumAverage,
@@ -518,12 +520,12 @@ pub enum EMissionDNA {
     DNA_Refinery_Medium,
     DNA_SalvageFractured_Complex,
     DNA_SalvageFractured_Medium,
-    DNA_Star_Complex,
-    DNA_Star_Medium,
+    DNA_Star_Complex,                          // Elimination (3 Dreadnoughts)
+    DNA_Star_Medium,                           // Elimination (2 Dreadnoughts)
     DNA_Tutorial,
-    DNA_Web_Large,
-    DNA_Web_Medium,
-    DNA_Web_Small,
+    DNA_Web_Large,                             // Deep Scan (5 Crystals)
+    DNA_Web_Medium,                            // Deep Scan (2 Crystals)
+    DNA_Web_Small,                             // Deep Scan (2 Crystals)
 }
 
 #[derive(Debug)]
@@ -861,7 +863,7 @@ pub fn get_normal_template() -> &'static UDeepDiveTemplate {
                 probability: 7,
                 allowed_durations: &[EMissionDuration::MD_Duration_Normal],
                 allowed_complexities: &[],
-                can_only_appear_once: true,
+                can_only_appear_once: true,                                      // heartbreaking info for vio
                 can_only_appear_once_per_deep_dive_set: false,
             },
             FDeepDiveTemplateItem {
@@ -964,7 +966,7 @@ pub fn get_hard_template() -> &'static UDeepDiveTemplate {
                 probability: 7,
                 allowed_durations: &[EMissionDuration::MD_Duration_Normal],
                 allowed_complexities: &[],
-                can_only_appear_once: true,
+                can_only_appear_once: true,                                      // FREE MY GIRL
                 can_only_appear_once_per_deep_dive_set: false,
             },
             FDeepDiveTemplateItem {
@@ -1001,7 +1003,7 @@ pub fn get_hard_template() -> &'static UDeepDiveTemplate {
     Deserialize,
     IntoStaticStr,
 )]
-pub enum EObjective {
+pub enum EObjective {                          // Annotated for Deep Dive secondaries
     OBJ_1st_DeepScan,
     OBJ_1st_Escort,
     OBJ_1st_Extraction,
@@ -1021,13 +1023,13 @@ pub enum EObjective {
     OBJ_2nd_KillFleas,
     OBJ_2nd_Mine_Dystrum,
     OBJ_2nd_Mine_Hollomite,
-    OBJ_DD_AlienEggs,
-    OBJ_DD_DeepScan,
-    OBJ_DD_Defense,
-    OBJ_DD_Elimination_Eggs,
-    OBJ_DD_Morkite,
-    OBJ_DD_MorkiteWell,
-    OBJ_DD_RepairMinimules,
+    OBJ_DD_AlienEggs,                          // 2 Eggs
+    OBJ_DD_DeepScan,                           // 2 Resonance Scans
+    OBJ_DD_Defense,                            // Black Box
+    OBJ_DD_Elimination_Eggs,                   // 1 Dreadnought
+    OBJ_DD_Morkite,                            // 150 Morkite
+    OBJ_DD_MorkiteWell,                        // Liquid Morkite Well
+    OBJ_DD_RepairMinimules,                    // 2 Mini-M.U.L.E.s (no uplink)
     OBJ_Eliminate_Eggs,
     OBJ_Elimination_Base,
     OBJ_Extraction_Base,
@@ -1050,17 +1052,17 @@ pub enum EObjective {
     Deserialize,
     IntoStaticStr,
 )]
-pub enum EMissionMutator {
-    MMUT_ExplosiveEnemies,
+pub enum EMissionMutator {                     // Annotated for Deep Dive mutators
+    MMUT_ExplosiveEnemies,                     // Volatile Guts
     MMUT_ExterminationContract,
     MMUT_SecretSecondary,
     MMUT_XXXP,
     MMUT_GoldRush,
-    MMUT_OxygenRich,
+    MMUT_OxygenRich,                           // Rich Atmosphere
     MMUT_RichInMinerals,
-    MMUT_Weakspot,
-    MMUT_BloodSugar,
-    MMUT_LowGravity,
+    MMUT_Weakspot,                             // Critical Weakness
+    MMUT_BloodSugar,                           // Blood Sugar
+    MMUT_LowGravity,                           // Low Gravity
 }
 
 #[derive(
@@ -1077,22 +1079,22 @@ pub enum EMissionMutator {
     Deserialize,
     IntoStaticStr,
 )]
-pub enum EMissionWarning {
-    WRN_RegenerativeEnemies,
-    WRN_HeroEnemies,
-    WRN_MacteraCave,
-    WRN_RockInfestation,
-    WRN_BulletHell,
-    WRN_CaveLeechDen,
-    WRN_NoOxygen,
+pub enum EMissionWarning {                     // Annotated for Deep Dive warnings
+    WRN_RegenerativeEnemies,                   // Regenerative Bugs
+    WRN_HeroEnemies,                           // Elite Threat
+    WRN_MacteraCave,                           // Mactera Plague
+    WRN_RockInfestation,                       // Ebonite Outbreak
+    WRN_BulletHell,                            // Duck and Cover
+    WRN_CaveLeechDen,                          // Cave Leech Cluster
+    WRN_NoOxygen,                              // Low Oxygen
     WRN_Plague,
-    WRN_ExploderInfestation,
-    WRN_Ghost,
-    WRN_LethalEnemies,
-    WRN_NoShields,
-    WRN_InfestedEnemies,
-    WRN_Swarmagedon,
-    WRN_RivalIncursion,
+    WRN_ExploderInfestation,                   // Exploder Infestation
+    WRN_Ghost,                                 // Haunted Cave
+    WRN_LethalEnemies,                         // Lethal Enemies
+    WRN_NoShields,                             // Shield Disruption
+    WRN_InfestedEnemies,                       // Parasites
+    WRN_Swarmagedon,                           // Swarmageddon
+    WRN_RivalIncursion,                        // Rival Presence
 }
 
 impl EObjective {
