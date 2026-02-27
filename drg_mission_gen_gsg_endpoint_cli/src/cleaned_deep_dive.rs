@@ -104,8 +104,8 @@ impl PrimaryObjective {
     pub(crate) fn display_detailed(&self, complexity: Complexity, duration: Duration) -> String {
         match self {
             PrimaryObjective::DeepScan => match (duration, complexity) {
-                (Duration::Short, Complexity::Average) => "Perform 3 Deep Scans".to_string(),
-                (Duration::Normal, Complexity::Average) => "Perform 5 Deep Scans".to_string(),
+                (Duration::Short, Complexity::Average) => "3 Resonance Crystals & Drillevator".to_string(),
+                (Duration::Normal, Complexity::Average) => "5 Resonance Crystals & Drillevator".to_string(),
                 (dur, comp) => unreachable!(
                     "unexpected deep scan duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                 ),
@@ -157,7 +157,7 @@ impl PrimaryObjective {
             },
             PrimaryObjective::Refinery => {
                 match (duration, complexity) {
-                    (Duration::Normal, Complexity::Average | Complexity::Complex) => "On-Site Refinery".to_string(),
+                    (Duration::Normal, Complexity::Average | Complexity::Complex) => "On-Site Refining".to_string(),
                     (dur, comp) => unreachable!(
                         "unexpected refinery duration/complexity combination: duration={dur:?}, complexity={comp:?}",
                     ),
